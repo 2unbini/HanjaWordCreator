@@ -11,6 +11,7 @@
 		A89E834028AB453400AAA032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E833F28AB453400AAA032 /* ContentView.swift */; };
 		A89E834228AB453600AAA032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89E834128AB453600AAA032 /* Assets.xcassets */; };
 		A89E834528AB453600AAA032 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89E834428AB453600AAA032 /* Preview Assets.xcassets */; };
+		A89E834D28AB828E00AAA032 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A89E834C28AB828E00AAA032 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89E834D28AB828E00AAA032 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HanjaWordCreator;
+			packageProductDependencies = (
+				A89E834C28AB828E00AAA032 /* SwiftSoup */,
+			);
 			productName = HanjaWordCreator;
 			productReference = A89E833A28AB453400AAA032 /* HanjaWordCreator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = A89E833128AB453400AAA032;
+			packageReferences = (
+				A89E834B28AB828E00AAA032 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = A89E833B28AB453400AAA032 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A89E834B28AB828E00AAA032 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A89E834C28AB828E00AAA032 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A89E834B28AB828E00AAA032 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A89E833228AB453400AAA032 /* Project object */;
 }
